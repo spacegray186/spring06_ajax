@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class MemberCont {
     
     public MemberCont() {
-        System.out.println("-----MemberCont()객체 생성 됨");
+        System.out.println("-----MemberCont() 객체 생성됨");
     }//end
     
     
@@ -32,12 +32,12 @@ public class MemberCont {
         String message="";
         
         if(userid.length()<5 || userid.length()>15) {
-            message="<span style='color:blue;font-weight:bold'>아이디는 5~15글자 이내 입력해 주세요!!</span>";
+            message="<span style='color:blue;font-weight:bold'>아이디는 5~15글자 이내로 입력해 주세요</span>";
         }else {
             if(userid.equals("itwill") || userid.equals("webmaster")) {
-                message="<span style='color:red;font-weight:bold'>중복된 아이디 입니다!!</span>"; 
+                message="<span style='color:red;font-weight:bold'>중복된 아이디입니다</span>"; 
             }else {
-                message="<span style='color:green;font-weight:bold'>사용가능한 아이디 입니다~</span>";
+                message="<span style='color:green;font-weight:bold'>사용가능한 아이디입니다</span>";
             }//if end
         }//if end
         return message;
@@ -80,24 +80,12 @@ public class MemberCont {
     @RequestMapping(value = "insert.do", method = RequestMethod.POST)
     public void insert(HttpServletRequest req) {
         
-        System.out.println("아이디:" + req.getParameter("userid"));
-        System.out.println("비번:"  + req.getParameter("passwd"));
-        System.out.println("이름:"  + req.getParameter("name"));
-        System.out.println("이메일:" + req.getParameter("email"));
+        System.out.println("아이디 : " + req.getParameter("userid"));
+        System.out.println("비번 : "  + req.getParameter("passwd"));
+        System.out.println("이름 : "  + req.getParameter("name"));
+        System.out.println("이메일 : " + req.getParameter("email"));
         
     }//insert() end
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+      
     
 }//class end
