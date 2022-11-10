@@ -19,7 +19,6 @@ public class HelloBean {
 
         hello = (IHello) factory.getBean("msgEN");
         hello.sayHello("Jane");
-        
-        
+                
     }//main() end
 }//class end
