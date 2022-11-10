@@ -7,7 +7,7 @@ http://www.springframework.org/schema/beans/spring-beans.xsd">
     <!-- springbean.xml -->
     <!-- 스프링 빈 등록 -->
     
-    <!-- <bean id="객체명" class="팩키명.클래스명"> -->
+    <!-- <bean id="객체명" class="패키지명.클래스명"> -->
     
     <!-- 
     <bean id="msgKO" class="kr.co.itwill.di.MessageKO1"></bean>
