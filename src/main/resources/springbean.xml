@@ -4,15 +4,17 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans
 http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-	<!-- springbean.xml -->
-	<!-- 스프링 빈 등록 -->
-	
-	<!-- 
-	<bean id="msgKO" class="kr.co.itwill.di.MessageKO1"></bean>
-	<bean id="msgEN" class="kr.co.itwill.di.MessageEN1"></bean>
-    -->
+    <!-- springbean.xml -->
+    <!-- 스프링 빈 등록 -->
     
+    <!-- <bean id="객체명" class="팩키명.클래스명"> -->
+    
+    <!-- 
+    <bean id="msgKO" class="kr.co.itwill.di.MessageKO1"></bean>
+    <bean id="msgEN" class="kr.co.itwill.di.MessageEN1"></bean>
+     -->
+     
     <bean id="msgKO" class="kr.co.itwill.di.MessageKO2"></bean>
-	<bean id="msgEN" class="kr.co.itwill.di.MessageEN2"></bean>
-    
+    <bean id="msgEN" class="kr.co.itwill.di.MessageEN2"></bean>
+     
 </beans>
