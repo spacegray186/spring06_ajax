@@ -8,7 +8,7 @@ public class HelloPOJO {
         IHello hello=null;
         
         hello=new MessageKO1(); //다형성
-        hello.sayHello("손흥민");
+        hello.sayHello("손길동");
         
         hello=new MessageEN1();
         hello.sayHello("TOM");
