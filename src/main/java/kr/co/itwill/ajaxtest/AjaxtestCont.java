@@ -42,25 +42,24 @@ public class AjaxtestCont {
             //요청한 사용자에게 응답하기 위한 출력 객체
             PrintWriter out=resp.getWriter();
             out.println("서버에서 응답해준 메세지 : ");
-            out.println("무궁화 꽃이 피었습니다~");
+            out.println("무궁화 꽃이 피었습니다");
             out.flush(); //out객체에 남아 있는 버퍼의 내용을 클리어
             out.close();
             
         }catch (Exception e) {
-            System.out.println("응답실패:" + e);
+            System.out.println("응답실패 : " + e);
         }//end
     }//message() end
     */
     
     
     //2)@ResponseBody를 활용한 메세지 전송
-    //->jsp view를 이용하여 출력하지 않고 response 객체에 직접 출력한다
-    //->return값 그대로 브라우저에 전송
+    // → jsp view를 이용하여 출력하지 않고 response 객체에 직접 출력한다
+    // → return값 그대로 브라우저에 전송
     @ResponseBody
     @RequestMapping(value = "message.do", method = RequestMethod.GET)
     public String message() {
-        return "서버에서 응답해준 메세지 : 무궁화 꽃이 피었습니다~";
+        return "서버에서 응답해준 메세지 : 무궁화 꽃이 피었습니다";
     }//message() end
-    
-    
+       
 }//class end
