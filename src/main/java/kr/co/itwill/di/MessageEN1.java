@@ -8,6 +8,6 @@ public class MessageEN1 implements IHello {
     
     @Override
     public void sayHello(String name) {
-        System.out.println("Hello~~" + name);        
+        System.out.println("Hello" + name);        
     }//end
 }//class end
