@@ -36,9 +36,6 @@
 		}//responseProc() end
 	
 	
-	
-	
-	
 	</script>
 </body>
 </html>
