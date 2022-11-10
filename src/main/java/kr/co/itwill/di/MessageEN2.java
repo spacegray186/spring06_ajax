@@ -10,7 +10,7 @@ public class MessageEN2 implements IHello {
     
     @Override
     public void sayHello(String name) {
-      JOptionPane.showMessageDialog(null, "Hello~~" + name);
+      JOptionPane.showMessageDialog(null, "Hello" + name);
     }
     
 }//class end
