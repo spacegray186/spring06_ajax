@@ -9,7 +9,7 @@
 </head>
 <body>
 	<!-- 쿠키를 활용하여 아이디 중복확인을 해야만 회원가입이 가능하다 -->	
-	<h3>회원등록폼(cookie)</h3>
+	<h3>회원등록 폼(cookie)</h3>
 	
 	<form name="memfrm" method="post" action="./insert.do" onsubmit="return send()">
 	    <table border="1" width="400px">
@@ -111,14 +111,6 @@
  				return false;
 			}//if end
 		}//send() end
-	
-	
-	
-	
-	
-	
-	
-	
 	
 	
 	</script>

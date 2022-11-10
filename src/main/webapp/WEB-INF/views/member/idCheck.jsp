@@ -8,7 +8,7 @@
     <script src="../js/jquery.cookie.js"></script>
 </head>
 <body>
-	<h3>회원등록폼</h3>
+	<h3>회원등록 폼</h3>
 	<form name="memfrm">
 		<table border="1" width="400px">
 		<tr>
@@ -41,10 +41,6 @@
 		$("#panel").html(result);
 		$("#panel").show();
 	}//responseProc() end
-	
-	
-	
-	
 	
 	
 	</script>
